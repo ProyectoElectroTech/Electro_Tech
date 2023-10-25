@@ -3,4 +3,3 @@ var ractive = new Ractive({
   template: '#template',
   data: {}
 });
-
