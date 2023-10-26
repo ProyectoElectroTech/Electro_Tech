@@ -12,12 +12,6 @@ loginBtn.onclick = () => {
   loginText.style.marginLeft = "0%";
 };
 signupLink.onclick = () => {
-  Swal.fire({
-    icon: 'success',
-    title: 'Registro exitoso',
-    timer: 2500,
-    showConfirmButton: false
-  });
   signupBtn.click();
   return false;
 };
