@@ -10,6 +10,7 @@ conection.connect((err) =>{
     console.log('la conexion funciona')
 })
 
+//Datos Login
 conection.query('SELECT * from logins', (err,rows)=>{
     if(err) throw err
     console.log('Datos de la tabla:')
@@ -18,6 +19,7 @@ conection.query('SELECT * from logins', (err,rows)=>{
     console.log(rows.length)
 })
 
+//Datos Contact
 /*conection.query('SELECT * from contact', (err,rows)=>{
     if(err) throw err
     console.log('Datos de la tabla:')
@@ -26,6 +28,7 @@ conection.query('SELECT * from logins', (err,rows)=>{
     console.log(rows.length)
 })*/
 
+//Datos sing up
 /*conection.query('SELECT * from singups', (err,rows)=>{
     if(err) throw err
     console.log('Datos de la tabla:')
