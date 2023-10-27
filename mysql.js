@@ -17,4 +17,20 @@ conection.query('SELECT * from logins', (err,rows)=>{
     console.log('la cantidad de resultados es:')
     console.log(rows.length)
 })
+
+/*conection.query('SELECT * from contact', (err,rows)=>{
+    if(err) throw err
+    console.log('Datos de la tabla:')
+    console.log(rows)
+    console.log('la cantidad de resultados es:')
+    console.log(rows.length)
+})*/
+
+/*conection.query('SELECT * from singups', (err,rows)=>{
+    if(err) throw err
+    console.log('Datos de la tabla:')
+    console.log(rows)
+    console.log('la cantidad de resultados es:')
+    console.log(rows.length)
+})*/
 conection.end();
