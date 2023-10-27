@@ -44,7 +44,7 @@
                     <textarea rows="5" name="message"></textarea>
                   </div>
                   <div class="submit">
-                    <div class="submit-card" on-click="toggle('flipCard')">Send Mail</div>
+                    <div class="submit-card" id="indexBtn" on-click="toggle('flipCard')">Send Mail</div>
                   </div>
                 </div>
               </form>
@@ -59,6 +59,14 @@
 </body>
 <!-- partial -->
   <script src='https://cdn.jsdelivr.net/npm/ractive@0.9'></script><script  src="./script.js"></script>
-
+  <script>
+    // Función que se ejecutará al hacer clic en el botón
+    function redirectToInicio() {
+      window.location.href = "/index.html";
+    }
+    // Asocia la función con el evento click del botón
+    const redirigirBtn = document.getElementById("indexBtn");
+    redirigirBtn.addEventListener("click", redirectToInicio);
+  </script>
 </body>
 </html>

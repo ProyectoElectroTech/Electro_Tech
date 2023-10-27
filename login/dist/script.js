@@ -16,3 +16,11 @@ signupLink.onclick = () => {
   signupBtn.click();
   return false;
 };
+function redirectToInicio() {
+
+  window.location.href = "/index.html";
+}
+
+// Asocia la función con el evento click del botón
+const redirigirBtn = document.getElementById("redirigirBtn");
+redirigirBtn.addEventListener("click", redirectToInicio);
