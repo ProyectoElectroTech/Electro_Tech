@@ -22,5 +22,5 @@ function redirectToInicio() {
 }
 
 // Asocia la función con el evento click del botón
-const redirigirBtn = document.getElementById("redirigirBtn");
+const redirigirBtn = document.getElementById("indexBtn");
 redirigirBtn.addEventListener("click", redirectToInicio);
