@@ -37,8 +37,8 @@ function procesarCompra(e){
           })
     }
     else{
-        emailjs.init('user_hx2rYaxbexZ0qlT8bs771')
-
+        emailjs.init('0cyFgQKWFDXCIzaGs')
+        
         const btn = document.getElementById('procesar-compra');
 
         document.getElementById('procesar-pago')
@@ -53,8 +53,8 @@ function procesarCompra(e){
             enviado.style.display = 'block';
             enviado.width = '150';
 
-        const serviceID = 'default_service';
-        const templateID = 'template_rtfpoq5';
+        const serviceID = 'service_tl29ldo';
+        const templateID = 'template_zqm0u9f';
 
         emailjs.sendForm(serviceID, templateID, this)
             .then(() => {
