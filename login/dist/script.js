@@ -30,7 +30,7 @@ function validar(){
     return false;
   }if(emaillog=="Abnermedina@gmail.com" && passlog=="abcd123-"){
     alert("Ingreso "+emaillog);
-    window.location.href = "/index.html";
+    window.location.href = "/users.html";
     return false;
   }else{
     attempt--;
