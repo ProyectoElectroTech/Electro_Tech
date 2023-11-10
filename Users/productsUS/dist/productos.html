@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link href="/Users/productsUS/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="menu logo-nav">
+        <a href="/Users/index.html" class="logo">ElectroTech</a>
+        <label class="menu-icon"><span class="fas fa-bars icomin"></span></label>
+        <nav class="navigation">
+          <ul>
+            <li><a href="/Users/index.html">Nosotros</a></li>
+            <li><a href="/Users/productsUS/dist/index.html">Productos</a></li>
+            <li><a href="/contactus/dist/index.html">Contacto</a></li>
+            <li class="search-icon">
+              <input type="search" placeholder="Search">
+              <label class="icon">
+                <span class="fas fa-search"></span>
+              </label>
+            </li>
+            <li class="car" >
+              <svg class="bi bi-cart3" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+              </svg>
+                <div id="carrito" class="dropdown-menu">
+                  <table id="lista-carrito" class="table">
+                      <thead>
+                          <tr>
+                              <th>Imagen</th>
+                              <th>Nombre</th>
+                              <th>Precio</th>
+                              <th></th>
+                          </tr>
+                      </thead>
+                      <tbody></tbody>
+                  </table>
+
+                  <a href="#" id="vaciar-carrito" class="button-vaciar">Vaciar Carro</a>
+                  <a href="#" id="procesar-pedido" class="button-pedido">Procesar Cotizacion</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+<main>
+
+        <div class="modal" id="modal">
+          <div class="modal-content">
+            <img src="" alt="" class="modal-img" id="modal-img">
+          </div>
+          <div class="modal-boton" id="modal-boton">X</div>
+        </div>
+
+        <div class="container-productos" id="lista-productos">
+
+          <div class="card">
+            <img src="/Users/productsUS/img/LaptopDell1.jpg" class="card-img">
+            <h5>DELL LATITUDE 5420 i7 1165G7 2.8GHZ 8GB DDR4 256GB PCI-E 12.6" W10PRO</h5>
+            <p>SKU: PC000001</p>
+            <p>Q.<small class="precio">11465.00</small></p>
+            <a href="#" class="button agregar-carrito" data-id="1">Cotizar</a>
+          </div>
+          <div class="card">
+            <img src="/Users/productsUS/img/LaptopLenovo1.jpg" class="card-img">
+            <h5>REFURBISHED LENOVO IDEAPAD FLEX5 i3 4GB 128GB 14" TOUCH W10H INGLES</h5>
+            <p>SKU: PC000002</p>
+            <p>Q.<small class="precio">2875.00</small></p>
+            <a href="#" class="button agregar-carrito" data-id="2">Cotizar</a>
+          </div>
+          <div class="card">
+            <img src="/Users/productsUS/img/LaptopDell2.jpg" class="card-img">
+            <h5>DELL VOSTRO 3405 AMD RYZEN3 3250U 2.6GHZ 4GB DDR4 1TB 14" W10P</h5>
+            <p>SKU: PC000003</p>
+            <p>Q.<small class="precio">3495.00</small></p>
+            <a href="#" class="button agregar-carrito" data-id="3">Cotizar</a>
+          </div>
+
+          <div class="card">
+            <img src="/Users/productsUS/img/Teclado1.jpg" class="card-img">
+            <h5>TECLADO XTECH XTK-505S PARA GAMERS USB CON LED ESPAÑOL</h5>
+            <p>SKU: TE000001</p>
+            <p>Q.<small class="precio">105.00</small></p>
+            <a href="#" class="button agregar-carrito" data-id="4">Cotizar</a>
+          </div>
+          <div class="card">
+            <img src="/Users/productsUS/img/Teclado2.jpg" class="card-img">
+            <h5>TECLADO MANHATTAN 180610 PARA GAMERS USB INGLES CON LED</h5>
+            <p>SKU: TE000002</p>
+            <p>Q.<small class="precio">130.00</small></p>
+            <a href="#" class="button agregar-carrito" data-id="5">Cotizar</a>
+          </div>
+          <div class="card">
+            <img src="/Users/productsUS/img/Teclado3.jpg" class="card-img">
+            <h5>TECLADO XTECH XTK-M401IM IRON MAN USB ESPANOL ROJO</h5>
+            <p>SKU: TE000003</p>
+            <p>Q.<small class="precio">170.00</small></p>
+            <a href="#" class="button agregar-carrito" data-id="6">Cotizar</a>
+          </div>
+
+          <div class="card">
+            <img src="/Users/productsUS/img/Mouse1.jpg" class="card-img">
+            <h5>MANHATTAN 179478 MOUSE BLUETOOTH 1600dpi NEGRO CON SCROLL</h5>
+            <p>SKU: MO000001</p>
+            <p>Q.<small class="precio">80.00</small></p>
+            <a href="#" class="button agregar-carrito" data-id="7">Cotizar</a>
+          </div>
+          <div class="card">
+            <img src="/Users/productsUS/img/Mouse2.jpg" class="card-img">
+            <h5>MOUSE PARA GAMERS REDRAGON M711 RGB USB</h5>
+            <p>SKU: MO000002</p>
+            <p>Q.<small class="precio">170.00</small></p>
+            <a href="#" class="button agregar-carrito" data-id="8">Cotizar</a>
+          </div>
+          <div class="card">
+            <img src="/Users/productsUS/img/Mouse3.jpg" class="card-img">
+            <h5>MOUSE LOGITECH G305 INALAMBRICO GAMERS 12000dpi AZUL 910-006012</h5>
+            <p>SKU: MO000003</p>
+            <p>Q.<small class="precio">320.00</small></p>
+            <a href="#" class="button agregar-carrito" data-id="9">Cotizar</a>
+          </div>
+          <div class="card">
+            <img src="/Users/productsUS/img/Mousepad1.jpg" class="card-img">
+            <h5>MOUSE PAD HYPERX FURY SPEED SERIES LARGE (con costura) HX-MPFS-S-L</h5>
+            <p>SKU: MP000001</p>
+            <p>Q.<small class="precio">130.00</small></p>
+            <a href="#" class="button agregar-carrito" data-id="10">Cotizar</a>
+          </div>
+
+        </div>
+</main>
+  
+
+<footer class="footer-section">
+  <div class="copyright-area">
+      <div class="container-footer">
+          <div class="row-footer">
+              <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                  <div class="copyright-text">
+                      <p>Copyright &copy; 2023, todos los derechos reservados <a href="/index.html">ElectroTech</a></p>
+                  </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                  <div class="footer-menu">
+                      <ul>
+                          <li><a href="/index.html">Nosotros</a></li>
+                          <li><a href="/products/dist/index.html">Productos</a></li>
+                          <li><a href="/contactus/dist/index.html">Contacto</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer> 
+
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script  src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script  src="/products/js/scripts.js"></script>
+    <script src="/products/js/carrito.js"></script>
+    <script src="/products/js/pedido.js"></script>
+    <script src="/products/js/compra.js"></script>
+</body>
+</html>
