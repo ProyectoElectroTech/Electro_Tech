@@ -1,3 +1,12 @@
+
+const formualrio = document.querySelector("#formlogin")
+formualrio.addEventListener("submit",validarform)
+function validarform(e){
+    e.preventDefault();
+    const emaillogin = document.querySelector("#emaillog").value
+    const passlogin = document.querySelector("#passlog").value
+}
+
 let mysql = require('mysql')
 let conection  = mysql.createConnection({
     host: 'localhost',

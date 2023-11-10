@@ -25,15 +25,15 @@
     <div class="form-inner">
       <form action="#" class="login" id="formlogin">
         <div class="field">
-          <input type="text" id ="emaillog" placeholder="Email Address" required>
+          <input type="text" name="emaillog" id ="emaillog" placeholder="Email Address" required>
         </div>
         <div class="field">
-          <input type="password" id ="passlog" placeholder="Password" required>
+          <input type="password" name="passlog" id ="passlog" placeholder="Password" required>
         </div>
         <div class="pass-link"><a href="#">Forgot password?</a></div>
         <div class="field btn">
           <div class="btn-layer"></div>
-          <input type="submit"  id="indexBtn" value="Login">
+          <input type="submit"  id="indexBtn" value="Login" onclick="validar()">
         </div>
         <div class="signup-link">Not a member? <a href="#">Signup now</a></div>
       </form>
@@ -60,12 +60,12 @@
   <script  src="/mysql.js"></script>
   <script>
    // Función que se ejecutará al hacer clic en el botón
-   function redirectToInicio() {
-     window.location.href = "/index.html";
-   }
+    //function redirectToInicio() {
+     // window.location.href = "/index.html";
+   // }
     // Asocia la función con el evento click del botón
-   const redirigirBtn = document.getElementById("indexBtn");
-   redirigirBtn.addEventListener("click", redirectToInicio);
+    //const redirigirBtn = document.getElementById("indexBtn");
+    //redirigirBtn.addEventListener("click", redirectToInicio);
   </script>
 </body>
 </html>
