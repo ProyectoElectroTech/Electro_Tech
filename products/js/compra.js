@@ -52,7 +52,7 @@ function procesarCompra(e){
             enviado.src = '/products/img/mail.gif';
             enviado.style.display = 'block';
             enviado.width = '150';
-
+            //Apartado de configuracion en la plataforma EmailJS
         const serviceID = 'service_tl29ldo';
         const templateID = 'template_zqm0u9f';
 
